@@ -9,34 +9,56 @@
 
 	<title>La Tour Eiffel</title>
 	<style>
-		h1{color: red;}
-		h2{color:blueviolet;}
-		p{background-color: aquamarine;}
+		h1{color: rgb(255, 255, 255);}
+		h2{color:rgb(255, 255, 255);}
+		p{background-color: rgb(85, 0, 255);}
 		
 
 	</style>
 </head>
 
 <body>
+<div> <div id="page"><!--Opening page div-->
 	<h1>La Tour Eiffel</h1>
 	<h2>Paris, France</h2>
 	<h3>Constructed 1887-1889</h3>
-
-	<img src="Tower_for_CS.webp", width="320" height="400" alt="La Tour Eiffel">
+</div> <!--Closing page div-->
+	<style>
+		p{color:aliceblue}
+		a{color: aliceblue;}
+	</style>
+	<div><id="left-column">
+	<div id="left-column" style="float:left; text-align:center; width:400px;">
+		<p> Paris is the best</p>
+		<p>Here are some facts about Paris:</p>
+		<p>Paris, France's capital, earned the "City of Light" nickname for being an early adopter of street lighting and a hub during the Enlightenment. The city is home to the Louvre, the world's largest art museum, and was originally a Roman settlement called Lutetia. The iconic Eiffel Tower was a temporary structure for the 1889 World's Fair, and Paris has no stop signs. Below the city's surface lie the Catacombs, containing the remains of six million people.  </p>
+	</div>
+	<img src="TowerEfff.jpeg", width="320" height="400" alt="La Tour Eiffel">
+	<div> <div id="page2"><!--Opening page div-->
 	<p> J'adore Paris</p>
 	<p> C'est super</p>
 	<p>
 		<a href="https://www.website.com">Go to website</a>
 	</p>
+	</div>
 	<p>
 		<ol>
+		<div> <div id="page2"><!--Opening page div-->
 			<li> It is very tall</li>
 			<li> It is made of steel</li>
 			<li> It is very popular amoung tourists</li>
+		</div>
 		</ol>
 	</p>
-	<h2>Here are some facts:</h4>
-	<img src="Facts_4_CS.jpg", width="320" height="500" alt="La Tour Eiffel">
+	<p>
+		<p id="box">What is the best city in the world?</p>
+
+		<button type="button"
+		onclick="document.getElementById('box').innerHTML = 'Paris!!'">
+		Click me
+		</button>
+	</p>
+	
 </body>
 
 </html>
