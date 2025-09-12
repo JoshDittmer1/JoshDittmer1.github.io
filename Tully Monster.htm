@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+	<link href="styles_forTully.css" rel="stylesheet" type="text/css">
 	<title>The Tully Monster</title>
 	<style>
 		body {font-family: arial, "sans-serif";}
+		
+
+
+
+
+
 	</style>
 </head>
 <body>
@@ -21,34 +30,59 @@
 <button type="button" onclick="document.getElementById('box').innerHTML = 'The Tully Monster grew to 35cm long.'">Show answer</button>
 </form>
 
-
 <form name="question2">
-<p id="box2">Click below to find out where it lived.</p> 
-<button type="button" onclick="document.getElementById('box2').innerHTML = 'It lived in the tropical estuaries of Illinois, USA'">Show answer</button>
+  <p id="box2">Where did it live?</p> 
+  Answer: <input type="text" name="answer">
+  <button type="button" onclick="validatea()">Show answer</button>
 </form>
-<input type="text" name="answer">
 
 <script>
-function validate() {
 
-var x = document.forms["question"]["answer"].value;
+function validatea() {
 
-if (x == "") {
+	var x = document.forms["question2"]["answer"].value;
 
-document.getElementById("box").style.color="red";
-
+	if (x == "") {
+	document.getElementById("box2").style.color="red";
+}
+	else if (x == "London"){
+	document.getElementById("box2").style.color = "green";
+	alert("Correct!");
+	}
+	else {
+    document.getElementById("box2").style.color = "red";
+	}
 }
 
-}
-<button type="button" onclick="validate()">Show answer</button>
-else if (x == "35cm"){
-
-alert("Correct!");
-
-}
 </script>
+</form>
 
+<form name="question3">
+  <p id="box3">How Long was it</p> 
+  Answer: <input type="text" name="answer">
+  <button type="button" onclick="validateb()">Show answer</button>
+</form>
 
-</body>
+<script>
+
+function validateb() {
+
+	var x = document.forms["question3"]["answer"].value;
+
+	if (x == "") {
+	document.getElementById("box3").style.color="red";
+}
+	else if (x == "35Cm"){
+	document.getElementById("box3").style.color = "green";
+	alert("Correct!");
+	}
+	else {
+    document.getElementById("box3").style.color = "red";
+	}
+}
+
+</script>
+</form>
+
 
 </html>
